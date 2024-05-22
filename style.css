@@ -1,0 +1,171 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #f1f1f1;
+}
+main {
+  flex: 1;
+}
+header img {
+  height: 250px;
+  padding: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  box-shadow: 0 4px 30px 4px gray;
+}
+header::before {
+  content: "";
+  background-image: url("images/krolik3.jpg");
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  filter: grayscale(100%);
+  z-index: -9999;
+}
+ul {
+  background-color: #797979;
+  display: inline-block;
+  position: relative;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #595959);
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+
+  list-style: none;
+}
+li:hover {
+  background: #f1f1f1;
+  color: #797979;
+}
+ul.dropdown li {
+  display: block;
+  padding: 10px;
+  width: 150px;
+}
+ul.dropdown li:hover {
+  display: block;
+  padding: 10px;
+  width: 150px;
+  color: #f1f1f1;
+  background-color: #797979;
+}
+ul.dropdown {
+  background: #f1f1f1;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+li:hover ul.dropdown {
+  display: block;
+}
+
+footer {
+  background-color: #797979;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+  min-height: 150px;
+  padding: 30px;
+}
