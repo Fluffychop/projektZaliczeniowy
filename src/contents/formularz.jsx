@@ -1,6 +1,22 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+import { useState } from "react";
 
-export default function Formularz() {
-  return <a>hhh</a>;
-}
+const Create = () => {
+  const [name, setName] = useState("");
+
+  return (
+    <div className="content">
+      <form>
+        <label>Imię i Nazwisko</label>
+        <input
+          type="text"
+          required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </form>
+    </div>
+  );
+};
+
+export default Create;

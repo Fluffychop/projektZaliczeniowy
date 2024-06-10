@@ -169,3 +169,11 @@ footer {
   min-height: 150px;
   padding: 30px;
 }
+
+.content {
+  height: 300px;
+  color: #595959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
