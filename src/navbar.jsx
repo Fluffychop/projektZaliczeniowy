@@ -41,7 +41,9 @@ const Navbar = () => {
         </li>
         <li>Hotel</li>
         <li>Galeria</li>
-        <li>Dla Załogi</li>
+        <li>
+          <NavLink to="/login">Dla Załogi</NavLink>
+        </li>
       </ul>
     </nav>
   );

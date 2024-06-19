@@ -112,7 +112,7 @@ header {
 }
 header::before {
   content: "";
-  background-image: url("images/krolik3.jpg");
+  background-image: url("images/photos/krolik3.jpg");
   top: 0;
   left: 0;
   width: 100%;
